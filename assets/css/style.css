@@ -110,7 +110,7 @@ nav {
     display: none;
 }
 
-/* Large devices */
+/* Large devices 768px min*/
 @media screen and (min-width: 760px) {
     nav {
         display:block;
@@ -141,4 +141,13 @@ nav {
     main {
         margin-top:79px;
     }
+}
+
+/* Large devices 992px min*/
+@media screen and (min-width: 992px) {
+
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
 }
