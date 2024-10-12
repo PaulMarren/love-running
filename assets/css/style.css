@@ -18,7 +18,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -53,7 +55,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -91,7 +93,55 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
+
+#signup {
+    background: url("../images/signup-image.webp") no-repeat center center/cover;
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
+}
+
+#signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+#signup-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, .6);
+    padding: 30px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
+
 
 /* Hero section */
 #hero {
@@ -113,14 +163,14 @@ main {
 }
 
 #benefits-image {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #times {
     background: url("../images/dublin-city.webp") no-repeat center/cover;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -154,7 +204,8 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
 
@@ -170,8 +221,8 @@ main {
     font-size: 280%;
 }
 
-#benefits-physical > div,
-#benefits-mental > div {
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -187,7 +238,7 @@ main {
 
 /* Gallery page */
 #photos img {
-    width:100%;
+    width: 100%;
     line-height: 1em;
 }
 
@@ -214,12 +265,13 @@ main {
 @media screen and (min-width: 576px) {
     #photos {
         column-count: 2;
-        column-gap: 0; 
+        column-gap: 0;
     }
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -233,7 +285,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -262,61 +314,83 @@ main {
     /* Reasons section */
     #benefits-mental,
     #benefits-physical {
-        display:flex;
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #benefits-mental > div,
-    #benefits-physical > div {
-        width:75%;
+    #benefits-mental>div,
+    #benefits-physical>div {
+        width: 75%;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         text-align: end;
-        align-self:flex-end;
+        align-self: flex-end;
     }
 
     #photos {
         column-count: 3;
     }
+
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        position: absolute;
+        top: 150px;
+        left: 10%;
+        max-width: 400px;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
 
 /* Large devices (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-   #benefits {
-    display: flex;
-    flex-direction: row;
-   }
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
 
-   #benefits > div {
-    flex : 1;
-   }
+    #benefits>div {
+        flex: 1;
+    }
 
-   #benefits-image {
-    order: 0;
-   }
+    #benefits-image {
+        order: 0;
+    }
 
-   #benefits-mental {
-    order:1;
-   }
+    #benefits-mental {
+        order: 1;
+    }
 
-   #benefits-mental > div {
-    align-self:flex-start;
-   }
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
 
-   #benefits-mental > div {
-    align-self: flex-end;
-   }
+    #benefits-mental>div {
+        align-self: flex-end;
+    }
 
-   #photos {
-    column-count: 4;
-}
+    #photos {
+        column-count: 4;
+    }
 }

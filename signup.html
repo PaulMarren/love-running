@@ -37,11 +37,31 @@
 
     <!--Main content-->
     <main>
-        <section id="hero">
-            <div id="cover-text">
-                <h2>Love Running</h2>
-                <h3>Dublin Docklands & Phoenix Park </h3>
-            </div>
+        <section id="signup">
+            <form id="signup-form" action="https://formdump.codeinstitute.net" method="POST">
+                <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" class="text-input" name="first_name" id="first-name" required><br>
+                <label for="last-name">Last Name</label>
+                <input type="text" class="text-input" name="last_name" id="last-name" required><br>
+                <label for="email-address">Email Address</label>
+                <input type="email" class="text-input" name="email_address" id="email-address" required><br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" name="running_preference" id="trail" value="trail">
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both">
+                    </div>
+                </div>
+                <input type="submit" class="join-button" value="Lets Run!">
+            </form>
         </section>
     </main>
 
@@ -49,13 +69,17 @@
     <footer>
         <ul id="social-networks">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (Opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
+                    aria-label="Visit our Facebook page (Opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
             <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (Opens in a new tab)"><i class="fa-brands fa-twitter"></i></a></li>
+                    aria-label="Visit our Twitter page (Opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+            </li>
             <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Youtube page (Opens in a new tab)"><i class="fa-brands fa-youtube"></i></a></li>
+                    aria-label="Visit our Youtube page (Opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+            </li>
             <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (Opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
+                    aria-label="Visit our Instagram page (Opens in a new tab)"><i
+                        class="fa-brands fa-instagram"></i></a></li>
         </ul>
     </footer>
 
